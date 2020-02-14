@@ -1,5 +1,7 @@
 = SDP Pipeline Libraries
 
+This is version 2.1!
+
 The Solution Delivery Platform's open source pipeline libraries plug in to the xref:jte:ROOT:index.adoc[Jenkins Templating Engine] to accelerate the development of a DevSecOps pipeline. 
 
 == Motivation 
