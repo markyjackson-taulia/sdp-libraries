@@ -2,7 +2,7 @@
 
 OpenShift is Red Hat's enterprise kubernetes distribution.
 
-This library allows you to perform deployments to static or ephemeral application environments with https://helm.sh/++[Helm].
+This library allows you to perform deployments to static or ephemeral application environments with https://helm.sh[Helm].
 
 == Steps Provided
 

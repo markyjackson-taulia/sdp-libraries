@@ -7,7 +7,7 @@ It validates pages against the following specifications/laws:
 
 * http://www.w3.org/TR/WCAG20/[W3C Web Content Accessibility Guidelines] (WCAG) 2.0, including A, AA and AAA levels (http://www.w3.org/TR/UNDERSTANDING-WCAG20/conformance.html#uc-levels-head[understanding levels of conformance])
 * U.S. http://www.section508.gov/[Section 508 legislation] 
-* https://www.w3.org/TR/html/++[W3C HTML5 Recommendation]
+* https://www.w3.org/TR/html[W3C HTML5 Recommendation]
 
 == Steps Contributed
 
