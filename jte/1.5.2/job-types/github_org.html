@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+        <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>GitHub Organization Job :: Solutions Delivery Platform</title>
+    <link rel="canonical" href="http://localhost/jte/1.5.2/job-types/github_org.html">
+    <meta name="generator" content="Antora 2.2.0">
+    <link rel="stylesheet" href="../../../_/css/site.css">    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Fira+Code">
+
+    <link rel="stylesheet"href="https:////cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/styles/monokai-sublime.min.css">
+    <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/highlight.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/languages/asciidoc.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/languages/groovy.min.js"></script>
+    <script src="https://unpkg.com/popper.js@1"></script>
+    <script src="https://unpkg.com/tippy.js@5"></script>
+    <script src="https://unpkg.com/clipboard@2/dist/clipboard.min.js"></script>  </head>
+  <body class="article">
+    <header class="mdc-top-app-bar mdc-top-app-bar--fixed">
+  <div class="mdc-top-app-bar__row">
+    <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+      <img class="toolbar-logo" src="../../../_/img/jte.svg" viewBox="20 0 80 100" alt="Jenkins Templating Engine Logo">
+      <span class="mdc-top-app-bar__title">Solutions Delivery Platform</span>
+    </section>
+
+    <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end" role="toolbar">
+        <i class="material-icons mdc-icon-button search" tabindex="0" role="button">search</i>
+    </section>
+  </div>
+
+  <div class="mdc-top-app-bar__row sdp-top-app-bar__search mdc-drawer-app-content hide">
+    <section class="mdc-top-app-bar__section">
+      <i class="material-icons mdc-icon-button search-arrow-back" tabindex="0" role="button" title="Close search">arrow_back</i>
+
+      <div class="mdc-text-field search expanded">
+        <input type="text" id="search-input" class="mdc-text-field__input search">
+        <label class="mdc-floating-label mdc-floating-label--float-above" for="search-input">
+          Search the docs
+        </label>
+      </div>
+
+      <i class="material-icons mdc-icon-button search-clear-query" role="button" tabindex="0" title="Clear search">close</i>
+    </section>
+  </div>
+</header>
+    <div class="body">
+<div class="toolbar mobileOnly" role="navigation">
+  <button id="toolbar-nav-toggle" class="mdc-icon-button material-icons mdc-icon-button">menu</button>
+  <a href="../../../sdp-libraries/latest/index.html" class="home-link"></a>
+<span class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">Jenkins Templating Engine</a></li>
+    <li>Job Types</li>
+    <li><a href="github_org.html">GitHub Organization Job</a></li>
+  </ul>
+</span>
+</div>
+<div class="nav-container"  data-component="jte" data-version="1.5.2">
+  <aside class="nav-container">
+    <div class="panels">
+          <div class="nav-trees">
+      <div class="version-box">
+        <select data-component="jte" class="select-version">
+            <option value="1.5.2">
+              1.5.2
+            </option>
+        </select>
+      </div>
+        <div data-component="jte" data-version="1.5.2" class="">
+          <div class="nav-item is-link">
+              <i class="material-icons show-more" aria-hidden="true">chevron_right</i>
+            <a  class="" href="../index.html">
+              Jenkins Templating Engine
+            </a>
+          </div>
+          <div class="nav-children-panel hide">
+             
+   
+     
+       
+   
+     
+      <div class="nav-item is-link">
+        
+          
+            <a  class="spacer" href="../index.html">Overview</a>              </div>
+           
+     
+      <div class="nav-item is-link">
+        
+          
+            <a  class="spacer" href="../ADOPTERS.html">Adopters</a>              </div>
+           
+     
+      <div class="nav-item ">
+        <i class="material-icons show-more" aria-hidden="true">chevron_right</i>
+         
+          <span class="">Pipeline Templating</span>
+      </div>
+       
+        <div class="nav-children-panel hide">
+           
+   
+     
+      <div class="nav-item is-link">
+        
+          
+            <a  class="spacer" href="../pipeline-templating/what_is_a_pipeline_template.html">What is a pipeline template?</a>              </div>
+           
+     
+      <div class="nav-item is-link">
+        
+          
+            <a  class="spacer" href="../pipeline-templating/configuration_files.html">Pipeline Configuration Files</a>              </div>
+           
+     
+      <div class="nav-item is-link">
+        
+          
+            <a  class="spacer" href="../pipeline-templating/configuration_file_sandboxing.html">Pipeline Configuration File Sandboxing</a>              </div>
+                  </div>
+     
+     
+      <div class="nav-item ">
+        <i class="material-icons show-more" aria-hidden="true">chevron_right</i>
+         
+          <span class="">Job Types</span>
+      </div>
+       
+        <div class="nav-children-panel hide">
+           
+   
+     
+      <div class="nav-item is-link">
+        
+          
+            <a  class="spacer" href="template_step.html">The Template Step</a>              </div>
+           
+     
+      <div class="nav-item is-link">
+        
+          
+            <a  class="spacer" href="pipeline.html">Individual Pipeline Jobs</a>              </div>
+           
+     
+      <div class="nav-item is-link">
+        
+          
+            <a  class="spacer" href="repository.html">MultiBranch Projects</a>              </div>
+           
+     
+      <div class="nav-item is-link">
+        
+          
+            <a  class="spacer is-current-page" href="github_org.html">GitHub Organization Job</a>              </div>
+                  </div>
+     
+     
+      <div class="nav-item ">
+        <i class="material-icons show-more" aria-hidden="true">chevron_right</i>
+         
+          <span class="">Primitives</span>
+      </div>
+       
+        <div class="nav-children-panel hide">
+           
+   
+     
+      <div class="nav-item is-link">
+        
+          
+            <a  class="spacer" href="../primitives/what_is_a_primitive_in_jte.html">What is a primitive in JTE?</a>              </div>
+           
+     
+      <div class="nav-item is-link">
+        
+          
+            <a  class="spacer" href="../primitives/application_environments.html">Application Environments</a>              </div>
+           
+     
+      <div class="nav-item is-link">
+        
+          
+            <a  class="spacer" href="../primitives/stages.html">Stages</a>              </div>
+           
+     
+      <div class="nav-item is-link">
+        
+          
+            <a  class="spacer" href="../primitives/keywords.html">Keywords</a>              </div>
+           
+     
+      <div class="nav-item is-link">
+        
+          
+            <a  class="spacer" href="../primitives/default_step_implementation.html">Default Step Implementation</a>              </div>
+                  </div>
+     
+     
+      <div class="nav-item ">
+        <i class="material-icons show-more" aria-hidden="true">chevron_right</i>
+         
+          <span class="">Library Development</span>
+      </div>
+       
+        <div class="nav-children-panel hide">
+           
+   
+     
+      <div class="nav-item is-link">
+        
+          
+            <a  class="spacer" href="../library-development/getting_started.html">Getting Started</a>              </div>
+           
+     
+      <div class="nav-item is-link">
+        
+          
+            <a  class="spacer" href="../library-development/externalizing_config.html">Exernalizing Library Configuration</a>              </div>
+           
+     
+      <div class="nav-item is-link">
+        
+          
+            <a  class="spacer" href="../library-development/validate_library_parameters.html">Validate Library Parameters</a>              </div>
+           
+     
+      <div class="nav-item is-link">
+        
+          
+            <a  class="spacer" href="../library-development/lifecycle_hooks.html">Leverage Lifecycle Hooks</a>              </div>
+           
+     
+      <div class="nav-item is-link">
+        
+          
+            <a  class="spacer" href="../library-development/multimethod_steps.html">Multi-Method Steps</a>              </div>
+           
+     
+      <div class="nav-item is-link">
+        <i class="material-icons show-more" aria-hidden="true">chevron_right</i>
+          
+            <a  class="" href="../library-development/library_sources/library_sources.html">Library Sources</a>              </div>
+       
+        <div class="nav-children-panel hide">
+           
+   
+     
+      <div class="nav-item is-link">
+        
+          
+            <a  class="spacer" href="../library-development/library_sources/scm_library_provider.html">SCM Library Provider</a>              </div>
+           
+     
+      <div class="nav-item is-link">
+        
+          
+            <a  class="spacer" href="../library-development/library_sources/plugin_library_provider.html">Plugin Library Provider</a>              </div>
+           
+     
+      <div class="nav-item is-link">
+        
+          
+            <a  class="spacer" href="../library-development/library_sources/example_library_walkthrough.html">Example Library Walkthrough</a>              </div>
+                  </div>
+            </div>
+     
+     
+      <div class="nav-item ">
+        <i class="material-icons show-more" aria-hidden="true">chevron_right</i>
+         
+          <span class="">Governance</span>
+      </div>
+       
+        <div class="nav-children-panel hide">
+           
+   
+     
+      <div class="nav-item is-link">
+        
+          
+            <a  class="spacer" href="../governance/governance_model.html">Governance Model</a>              </div>
+           
+     
+      <div class="nav-item is-link">
+        
+          
+            <a  class="spacer" href="../governance/governance_tier.html">Governance Tier</a>              </div>
+           
+     
+      <div class="nav-item is-link">
+        
+          
+            <a  class="spacer" href="../governance/hierarchical_governance.html">Hierarchical Governance</a>              </div>
+           
+     
+      <div class="nav-item is-link">
+        
+          
+            <a  class="spacer" href="../governance/config_file_aggregation.html">Configuration File Aggregation</a>              </div>
+           
+     
+      <div class="nav-item is-link">
+        
+          
+            <a  class="spacer" href="../governance/conditional_inheritance.html">Conditional Inheritance Examples</a>              </div>
+           
+     
+      <div class="nav-item is-link">
+        
+          
+            <a  class="spacer" href="../governance/pipeline_template_selection.html">Pipeline Template Selection</a>              </div>
+           
+     
+      <div class="nav-item is-link">
+        
+          
+            <a  class="spacer" href="../governance/library_selection.html">Library Selection</a>              </div>
+                  </div>
+     
+     
+       
+   
+     
+      <div class="nav-item is-link">
+        <i class="material-icons show-more" aria-hidden="true">chevron_right</i>
+          
+            <a  class="" href="../developer/index.html">Developer Documentation</a>              </div>
+       
+        <div class="nav-children-panel hide">
+           
+   
+     
+      <div class="nav-item is-link">
+        
+          
+            <a  class="spacer" href="../developer/initialization.html">Initialization Process</a>              </div>
+                  </div>
+              </div>
+        </div>
+    </div>      
+    <div class="clear"></div>
+    <div class="nav-trees">
+      <div class="version-box">
+        <select data-component="sdp-libraries" class="select-version">
+            <option value="latest">
+              latest
+            </option>
+        </select>
+      </div>
+        <div data-component="sdp-libraries" data-version="latest" class="">
+          <div class="nav-item is-link">
+              <i class="material-icons show-more" aria-hidden="true">chevron_right</i>
+            <a  class="" href="../../../sdp-libraries/latest/index.html">
+              SDP Pipeline Libraries
+            </a>
+          </div>
+          <div class="nav-children-panel hide">
+             
+   
+     
+       
+   
+     
+      <div class="nav-item is-link">
+        
+          
+            <a  class="spacer" href="../../../sdp-libraries/latest/index.html">Overview</a>              </div>
+           
+     
+      <div class="nav-item is-link">
+        
+          
+            <a  class="spacer" href="../../../sdp-libraries/latest/create-new-library.html">Create a New Library</a>              </div>
+           
+     
+      <div class="nav-item ">
+        <i class="material-icons show-more" aria-hidden="true">chevron_right</i>
+         
+          <span class="">Libraries</span>
+      </div>
+       
+        <div class="nav-children-panel hide">
+           
+   
+     
+      <div class="nav-item is-link">
+        
+          
+            <a  class="spacer" href="../../../sdp-libraries/latest/libraries/a11y.html">The A11y Machine</a>              </div>
+           
+     
+      <div class="nav-item is-link">
+        
+          
+            <a  class="spacer" href="../../../sdp-libraries/latest/libraries/docker.html">Docker</a>              </div>
+           
+     
+      <div class="nav-item is-link">
+        
+          
+            <a  class="spacer" href="../../../sdp-libraries/latest/libraries/github.html">GitHub</a>              </div>
+           
+     
+      <div class="nav-item is-link">
+        
+          
+            <a  class="spacer" href="../../../sdp-libraries/latest/libraries/github_enterprise.html">GitHub Enterprise</a>              </div>
+           
+     
+      <div class="nav-item is-link">
+        
+          
+            <a  class="spacer" href="../../../sdp-libraries/latest/libraries/gitlab.html">GitLab</a>              </div>
+           
+     
+      <div class="nav-item is-link">
+        
+          
+            <a  class="spacer" href="../../../sdp-libraries/latest/libraries/kubernetes.html">Kubernetes</a>              </div>
+           
+     
+      <div class="nav-item is-link">
+        
+          
+            <a  class="spacer" href="../../../sdp-libraries/latest/libraries/openshift.html">OpenShift</a>              </div>
+           
+     
+      <div class="nav-item is-link">
+        
+          
+            <a  class="spacer" href="../../../sdp-libraries/latest/libraries/owasp_dep_check.html">OWASP Dependency Checker</a>              </div>
+           
+     
+      <div class="nav-item is-link">
+        
+          
+            <a  class="spacer" href="../../../sdp-libraries/latest/libraries/owasp_zap.html">OWASP ZAP</a>              </div>
+           
+     
+      <div class="nav-item is-link">
+        
+          
+            <a  class="spacer" href="../../../sdp-libraries/latest/libraries/protractor.html">Protractor</a>              </div>
+           
+     
+      <div class="nav-item is-link">
+        
+          
+            <a  class="spacer" href="../../../sdp-libraries/latest/libraries/sdp.html">SDP</a>              </div>
+           
+     
+      <div class="nav-item is-link">
+        
+          
+            <a  class="spacer" href="../../../sdp-libraries/latest/libraries/slack.html">Slack</a>              </div>
+           
+     
+      <div class="nav-item is-link">
+        
+          
+            <a  class="spacer" href="../../../sdp-libraries/latest/libraries/sonarqube.html">SonarQube</a>              </div>
+           
+     
+      <div class="nav-item is-link">
+        
+          
+            <a  class="spacer" href="../../../sdp-libraries/latest/libraries/sysdig_secure.html">Sysdig Secure</a>              </div>
+           
+     
+      <div class="nav-item is-link">
+        
+          
+            <a  class="spacer" href="../../../sdp-libraries/latest/libraries/twistlock.html">Twistlock</a>              </div>
+                  </div>
+     
+     
+      <div class="nav-item ">
+        <i class="material-icons show-more" aria-hidden="true">chevron_right</i>
+         
+          <span class="">Unit Testing</span>
+      </div>
+       
+        <div class="nav-children-panel hide">
+           
+   
+     
+      <div class="nav-item is-link">
+        
+          
+            <a  class="spacer" href="../../../sdp-libraries/latest/unit_testing/index.html">Purpose of Unit Testing</a>              </div>
+           
+     
+      <div class="nav-item is-link">
+        
+          
+            <a  class="spacer" href="../../../sdp-libraries/latest/unit_testing/jenkins-spock.html">Jenkins Spock</a>              </div>
+           
+     
+      <div class="nav-item is-link">
+        
+          
+            <a  class="spacer" href="../../../sdp-libraries/latest/unit_testing/writing-tests.html">Writing Unit Tests</a>              </div>
+           
+     
+      <div class="nav-item is-link">
+        
+          
+            <a  class="spacer" href="../../../sdp-libraries/latest/unit_testing/executing-tests.html">Test Execution</a>              </div>
+           
+     
+      <div class="nav-item is-link">
+        
+          
+            <a  class="spacer" href="../../../sdp-libraries/latest/unit_testing/faq.html">Frequently Asked Questions</a>              </div>
+                  </div>
+              </div>
+        </div>
+    </div>      
+    <div class="clear"></div>
+
+    </div>
+  </aside>
+</div>
+<main>
+<article class="doc">
+        <div class="on-this-page-container desktopOnly">
+    <aside>
+        <div class="toc-header">
+            <span class="toc-title">On this page</span>
+            <a class="edit-page" href="https://github.com/jenkinsci/templating-engine-plugin/edit/master/docs/modules/job-types/pages/github_org.adoc">
+                <div class="mdc-ripple-surface edit-page">
+                    <div class="mdc-button__ripple"></div>
+                    <i class="material-icons-outlined mdc-button__icon" aria-hidden="true">edit</i>
+                    <span class="mdc-button__label">Edit on GitHub</span>
+                </div>
+            </a>
+        </div>
+        <ul id="toc" class="toc">            
+
+        </ul>
+    </aside>
+</div>
+
+        <div class="contents">
+                <h1 class="page">GitHub Organization Job</h1>
+            <div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>JTE can be used to apply a pipeline template to an entire GitHub Organization by creating a <strong>GitHub Organization</strong> job in Jenkins.</p>
+</div>
+<div class="paragraph">
+<p>To configure this, under the <strong>Projects</strong> section you will set the <strong>Project Recognizer</strong> as <code>Jenkins Templating Engine</code>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_exclude_branches_without_pipeline_config_groovy"><a class="anchor" href="#_exclude_branches_without_pipeline_config_groovy"></a>Exclude Branches Without <code>pipeline_config.groovy</code></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>When <code>Jenkins Templating Engine</code> is selected, a checkbox option is presented to exclude branches in source code repositories that do not have a <code>pipeline_config.groovy</code> file at the root of the repository.</p>
+</div>
+<div class="paragraph">
+<p>The default value is to create pipeline jobs for every branch regardless of whether a <code>pipeline_config.groovy</code> is present or not.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_repository_configuration"><a class="anchor" href="#_repository_configuration"></a>Repository Configuration</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Note, the <strong>GitHub Organization</strong> project can configure a <strong>Governance Tier</strong> for specifying pipeline templates, library sources, and applying a pipeline configuration to every branch of every repository in a GitHub Organization.</p>
+</div>
+<div class="paragraph">
+<p>You can find these settings under the <code>Jenkins Templating Engine</code> section of the job configuration.</p>
+</div>
+</div>
+</div>
+            <script>
+    console.log("page.previous: ", {"content":"MultiBranch Projects","url":"/jte/1.5.2/job-types/repository.html","urlType":"internal"})
+    console.log("page.next: ", {"content":"What is a primitive in JTE?","url":"/jte/1.5.2/primitives/what_is_a_primitive_in_jte.html","urlType":"internal"})
+</script>
+
+<div class="nav-buttons">
+        <a class="previous" href="                repository.html"
+        >
+            <div class="arrow">
+                <i class="material-icons show-more" aria-hidden="true">arrow_back</i>
+            </div>
+             <div class="title">
+                MultiBranch Projects
+            </div>
+        </a>
+        <a class="next" href="                ../primitives/what_is_a_primitive_in_jte.html"
+        >
+            <div class="title">
+                What is a primitive in JTE?
+            </div>
+            <div class="arrow">
+                <i class="material-icons show-more" aria-hidden="true">arrow_forward</i>
+            </div>
+        </a>
+</div>        </div>
+</article>
+<div class="footer">
+  <p>© Copyright 2018-2020, <a href="https://boozallen.com">Booz Allen Hamilton</a></p>
+  <p>Built with <a href="https://antora.org">Antora</a> using a <a href="https://github.com/boozallen/sdp-docs-skin">custom UI Bundle</a>.</p>
+</div>
+</main>
+</div>
+    <script src="../../../_/js/site.js"></script>
+<script async src="../../../_/../search-index.js"></script>  </body>
+</html>
